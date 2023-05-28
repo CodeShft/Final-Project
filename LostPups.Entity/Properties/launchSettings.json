@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "LostPups.Entity": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "applicationUrl": "https://localhost:63987;http://localhost:63988"
+    }
+  }
+}
