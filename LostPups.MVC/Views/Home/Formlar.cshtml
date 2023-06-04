@@ -1,0 +1,208 @@
+﻿@{
+    Layout = null;
+}
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+</head>
+
+
+
+
+
+
+
+
+<style>
+
+    body {   
+  text-align: center;  
+  padding: 20px;  
+background-color: #F8F9FA;  
+background-size: 1800% 1800%;  
+font-family: "Lucida Console", "Courier New", monospace;  
+-webkit-animation: rainbow 18s ease infinite;  
+-o-animation: rainbow 18s ease infinite;  
+  animation: rainbow 18s ease infinite; }  
+
+
+</style>
+
+<body>
+    <div class="col-md-4 container bg-default">
+            <h4 class = "my-4">  
+               
+                     KAYIP EKLEME FORMU
+            </h4>
+   
+            <div class = "form-row">  
+                <div class = "col-md-6 form-group">
+                    <label for="firstname"> İlan Başlığı </label>
+                    <input type = "text" class = "form-control" id = "firstname" placeholder = "First Name">  
+                <div class = "invalid-feedback">  
+                    Valid first name is required.  
+                </div>
+             
+</div> <div class = "col-md-6 form-group">
+                    <label for="lastname"> Pati İsmi </label>
+                    <input type = "text" class = "form-control" id = "lastname" placeholder = "Last Name">  
+                <div class = "invalid-feedback">  
+                    Valid last name is required.  
+                        </div>  
+                    </div>  
+                </div>
+        <div class="form-row">
+            <div class="col-md-6 form-group">
+                <label for="firstname"> Yaşı </label>
+                <input type="text" class="form-control" id="firstname" placeholder="First Name">
+                <div class="invalid-feedback">
+                    Valid first name is required.
+                </div>
+
+            </div> <div class="col-md-6 form-group">
+                <label for="lastname"> Rengi </label>
+                <input type="text" class="form-control" id="lastname" placeholder="Last Name">
+                <div class="invalid-feedback">
+                    Valid last name is required.
+                </div>
+            </div>
+        </div>
+
+                <div class = "row">  
+                <div class = "col-md-4 form-group">  
+            <label for = "country"> Türü </label>  
+                <select type = "text" class = "form-control" id = "country">  
+                <option> Seçiniz... </option>  
+            <option> Kedi </option>  
+             <option> Köpek </option>
+             <option> Kuş </option>
+                </select>  
+                <div class = "invalid-feedback">  
+    Please select a valid country.  
+                        </div>  
+                    </div>  
+            <div class = "col-md-4 form-group">  
+                <label for = "city"> Cinsiyeti </label>  
+            <select type = "text" class = "form-control" id = "city">  
+                <option> Seçiniz... </option>  
+                        <option> Dişi </option>
+                    <option> Erkek </option>
+                </select>  
+                <div class = "invalid-feedback">  
+                    Please provide a valid city.  
+                        </div>  
+                    </div>          
+            <div class = "col-md-4 form-group">  
+       <div class="elem-group inlined">
+    <label for="checkout-date"> Kayıp Tarihi </label>
+    <input type="date" id="checkout-date" name="checkout" required>
+  </div>
+                         
+            <div class = "invalid-feedback">  
+                            Postcode required.  
+                        </div>  
+                    </div>  
+                </div>  
+                <hr>    
+              
+                <h4 class = "mb-4"> </h4>  
+                <div class = "form-check">  
+                   @* <input type = "radio" class = "form-check-input" id = "credit" name = "payment-method" checked required>  
+                    <label for = "credit" class = "form-check-label"> Credit Card </label>  *@
+                </div>  
+                <div class = "form-check">  
+                    @*<input type = "radio" class = "form-check-input" id = "debit" name = "payment-method" required>  
+                    <label for = "debit" class = "form-check-label"> Debit Card </label>  *@
+                </div>  
+                <div class = "form-check">  
+                    @*<input type = "radio" class = "form-check-input" id = "paypal" name = "payment-method" required>  
+                    <label for = "paypal" class = "form-check-label"> PayPal </label>  *@
+                </div>  
+                <div class = "row mt-4">  
+                <div class = "col-md-6 form-group">  
+   @* <label for = "card-name"> Name on card </label>  *@
+            <input type = "text" class = "form-control" id = "card-name" required>  
+        <div class = "invalid-feedback">  
+                    Name on card is required  
+                            </div>  
+                        </div>  
+                <div class = "col-md-6 form-group">  
+         @*   <label for = "card-no"> Card Number </label>  *@
+@*                <input type = "text" class = "form-control" id = "card-no" required>  
+*@            <div class = "invalid-feedback">  
+            Credit card number is required  
+                            </div>  
+                        </div>  
+                </div>  
+                <div class = "form-row">  
+            <div class = "col-md-5 form-group">  
+        @*<label for = "expiration"> Expire Date </label>  
+    <input type = "text" class = "form-control" id = "card-name" placeholder required> *@ 
+        <div class = "invalid-feedback">  
+            Expiration date required  
+                            </div>  
+                        </div>      
+            <div class = "col-md-5 form-group">  
+   @* <label for = "ccv-no"> Security Number </label>  
+        <input type = "text" class = "form-control" id = "sec-no" placeholder required>  *@
+        <div class = "invalid-feedback">  
+            Security code required  
+                            </div>  
+                    </div>  
+                </div>  
+                    <hr class = "mb-4">     
+                    <button class = "btn btn-primary bt-lg btn-block" type = "submit"> Continue to Checkout </button>  
+</body>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    var currentDateTime = new Date();
+    var year = currentDateTime.getFullYear();
+    var month = (currentDateTime.getMonth() + 1);
+    var date = (currentDateTime.getDate() + 1);
+
+    if (date < 10) {
+        date = '0' + date;
+    }
+    if (month < 10) {
+        month = '0' + month;
+    }
+
+    var dateTomorrow = year + "-" + month + "-" + date;
+    var checkinElem = document.querySelector("#checkin-date");
+    var checkoutElem = document.querySelector("#checkout-date");
+
+    checkinElem.setAttribute("min", dateTomorrow);
+
+    checkinElem.onchange = function () {
+        checkoutElem.setAttribute("min", this.value);
+    }
+</script>           

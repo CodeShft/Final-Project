@@ -28,5 +28,24 @@ namespace LostPups.MVC.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+
+        public IActionResult TEST() 
+        {
+            return View();
+        }
+
+
+        public IActionResult Formlar()
+        {
+            return View();
+        }
+
     }
+
+    
+
+
+
+
 }

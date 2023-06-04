@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -7,9 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="E:\LostPups.Core\LostPups.Core.csproj" />
-    <ProjectReference Include="E:\LostPups.DataAccess\LostPups.DataAccess.csproj" />
-    <ProjectReference Include="E:\LostPups.Entity\LostPups.Entity.csproj" />
+    <ProjectReference Include="..\LostPups.Core\LostPups.Core.csproj" />
+    <ProjectReference Include="..\LostPups.DataAccess\LostPups.DataAccess.csproj" />
+    <ProjectReference Include="..\LostPups.Entity\LostPups.Entity.csproj" />
+    <ProjectReference Include="..\LostPups.MVC\LostPups.MVC.csproj" />
   </ItemGroup>
 
   <ItemGroup>
