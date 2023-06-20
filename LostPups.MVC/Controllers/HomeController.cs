@@ -30,7 +30,7 @@ namespace LostPups.MVC.Controllers
         }
 
 
-        public IActionResult TEST() 
+        public IActionResult Hakkimizda() 
         {
             return View();
         }

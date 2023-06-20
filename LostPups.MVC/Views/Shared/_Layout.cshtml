@@ -16,31 +16,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="~/assets/images/favicon.png" type="image/png">
 
     <!--====== Slick CSS ======-->
-    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="~/assets/css/slick.css" asp-append-version="true">
 
     <!--====== Line Icons CSS ======-->
-    <link rel="stylesheet" href="assets/css/LineIcons.css">
+    <link rel="stylesheet" href="~/assets/css/LineIcons.css" asp-append-version="true">
 
     <!--====== Material Design Icons CSS ======-->
-    <link rel="stylesheet" href="assets/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="~/assets/css/materialdesignicons.min.css" asp-append-version="true">
 
     <!--====== Jquery Ui CSS ======-->
-    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="~/assets/css/jquery-ui.min.css" asp-append-version="true">
 
     <!--====== nice select CSS ======-->
-    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="~/assets/css/nice-select.css" asp-append-version="true">
 
     <!--====== Bootstrap CSS ======-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/assets/css/bootstrap.min.css" asp-append-version="true">
 
     <!--====== Default CSS ======-->
-    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="~/assets/css/default.css" asp-append-version="true">
 
     <!--====== Style CSS ======-->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="~/assets/css/style.css" asp-append-version="true">
 
 </head>
 
@@ -125,12 +125,12 @@
                             <!-- navbar top left Start -->
                             <div class="navbar-top-left">
                                 <ul class="navbar-top-link">
-                                    <li><a href="about-page.html">HAKKIMIZDA</a></li>
+                                    <li><a asp-controller="Home" asp-action="Hakkimizda">HAKKIMIZDA</a></li>
                                     <li><a href="contact-page.html">İLETİŞİM</a></li>
                                     <li>
                                         <a href="javascript:void(0)">
                                             <i class="mdi mdi-phone-in-talk"></i>
-                                            +8801234567890
+                                            0850 287 9066
                                         </a>
                                     </li>
                                 </ul>
@@ -169,8 +169,8 @@
                                         <!-- sub mega dropdown Ends -->
                                     </li>
                                     <li><a asp-controller="Home" asp-action="Formlar">Formlar</a></li>
-                                    <li><a href="category.html">Kids</a></li>
-                                    <li><a href="category.html">Accessories</a></li>
+                                    @*<li><a href="category.html">Kids</a></li>
+                                    <li><a href="category.html">Accessories</a></li>*@
                                 </ul>
                             </div>
                             <!-- navbar menu Ends -->
