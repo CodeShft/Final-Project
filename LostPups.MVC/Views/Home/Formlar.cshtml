@@ -1,208 +1,132 @@
 ﻿@{
-    Layout = null;
+    ViewData["Title"] = "";
+    Layout = "_Layout";
 }
-<head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-</head>
-
-
-
-
-
-
-
-
-<style>
-
-    body {   
-  text-align: center;  
-  padding: 20px;  
-background-color: #F8F9FA;  
-background-size: 1800% 1800%;  
-font-family: "Lucida Console", "Courier New", monospace;  
--webkit-animation: rainbow 18s ease infinite;  
--o-animation: rainbow 18s ease infinite;  
-  animation: rainbow 18s ease infinite; }  
-
-
-</style>
-
-<body>
-    <div class="col-md-4 container bg-default">
-            <h4 class = "my-4">  
-               
-                     KAYIP EKLEME FORMU
-            </h4>
-   
-            <div class = "form-row">  
-                <div class = "col-md-6 form-group">
-                    <label for="firstname"> İlan Başlığı </label>
-                    <input type = "text" class = "form-control" id = "firstname" placeholder = "First Name">  
-                <div class = "invalid-feedback">  
-                    Valid first name is required.  
-                </div>
-             
-</div> <div class = "col-md-6 form-group">
-                    <label for="lastname"> Pati İsmi </label>
-                    <input type = "text" class = "form-control" id = "lastname" placeholder = "Last Name">  
-                <div class = "invalid-feedback">  
-                    Valid last name is required.  
-                        </div>  
-                    </div>  
-                </div>
-        <div class="form-row">
-            <div class="col-md-6 form-group">
-                <label for="firstname"> Yaşı </label>
-                <input type="text" class="form-control" id="firstname" placeholder="First Name">
-                <div class="invalid-feedback">
-                    Valid first name is required.
-                </div>
-
-            </div> <div class="col-md-6 form-group">
-                <label for="lastname"> Rengi </label>
-                <input type="text" class="form-control" id="lastname" placeholder="Last Name">
-                <div class="invalid-feedback">
-                    Valid last name is required.
-                </div>
-            </div>
-        </div>
-
-                <div class = "row">  
-                <div class = "col-md-4 form-group">  
-            <label for = "country"> Türü </label>  
-                <select type = "text" class = "form-control" id = "country">  
-                <option> Seçiniz... </option>  
-            <option> Kedi </option>  
-             <option> Köpek </option>
-             <option> Kuş </option>
-                </select>  
-                <div class = "invalid-feedback">  
-    Please select a valid country.  
-                        </div>  
-                    </div>  
-            <div class = "col-md-4 form-group">  
-                <label for = "city"> Cinsiyeti </label>  
-            <select type = "text" class = "form-control" id = "city">  
-                <option> Seçiniz... </option>  
-                        <option> Dişi </option>
-                    <option> Erkek </option>
-                </select>  
-                <div class = "invalid-feedback">  
-                    Please provide a valid city.  
-                        </div>  
-                    </div>          
-            <div class = "col-md-4 form-group">  
-       <div class="elem-group inlined">
-    <label for="checkout-date"> Kayıp Tarihi </label>
-    <input type="date" id="checkout-date" name="checkout" required>
+  <!-- Start Header form -->
+  <div class="text-center pt-5">
+        <h2>Kayıp Ekleme Formu</h2>
+       
+    
   </div>
-                         
-            <div class = "invalid-feedback">  
-                            Postcode required.  
-                        </div>  
-                    </div>  
-                </div>  
-                <hr>    
-              
-                <h4 class = "mb-4"> </h4>  
-                <div class = "form-check">  
-                   @* <input type = "radio" class = "form-check-input" id = "credit" name = "payment-method" checked required>  
-                    <label for = "credit" class = "form-check-label"> Credit Card </label>  *@
-                </div>  
-                <div class = "form-check">  
-                    @*<input type = "radio" class = "form-check-input" id = "debit" name = "payment-method" required>  
-                    <label for = "debit" class = "form-check-label"> Debit Card </label>  *@
-                </div>  
-                <div class = "form-check">  
-                    @*<input type = "radio" class = "form-check-input" id = "paypal" name = "payment-method" required>  
-                    <label for = "paypal" class = "form-check-label"> PayPal </label>  *@
-                </div>  
-                <div class = "row mt-4">  
-                <div class = "col-md-6 form-group">  
-   @* <label for = "card-name"> Name on card </label>  *@
-            <input type = "text" class = "form-control" id = "card-name" required>  
-        <div class = "invalid-feedback">  
-                    Name on card is required  
-                            </div>  
-                        </div>  
-                <div class = "col-md-6 form-group">  
-         @*   <label for = "card-no"> Card Number </label>  *@
-@*                <input type = "text" class = "form-control" id = "card-no" required>  
-*@            <div class = "invalid-feedback">  
-            Credit card number is required  
-                            </div>  
-                        </div>  
-                </div>  
-                <div class = "form-row">  
-            <div class = "col-md-5 form-group">  
-        @*<label for = "expiration"> Expire Date </label>  
-    <input type = "text" class = "form-control" id = "card-name" placeholder required> *@ 
-        <div class = "invalid-feedback">  
-            Expiration date required  
-                            </div>  
-                        </div>      
-            <div class = "col-md-5 form-group">  
-   @* <label for = "ccv-no"> Security Number </label>  
-        <input type = "text" class = "form-control" id = "sec-no" placeholder required>  *@
-        <div class = "invalid-feedback">  
-            Security code required  
-                            </div>  
-                    </div>  
-                </div>  
-                    <hr class = "mb-4">     
-                    <button class = "btn btn-primary bt-lg btn-block" type = "submit"> Continue to Checkout </button>  
-</body>  
+  <!-- End Header form -->
 
+  <!-- Start Card -->
+  <div class="card">
+    <!-- Start Card Body -->
+    <div class="card-body">
+      <!-- Start Form -->
+      <form id="bookingForm" action="#" method="" class="needs-validation" novalidate autocomplete="off">
+        <!-- Start Input Name -->
+        <div class="form-group">
+          <label for="inputName">Name</label>
+          <input type="text" class="form-control" id="inputName" name="name" placeholder="İsminiz" required />    
+        </div>
+        <!-- End Input Name -->
 
+        <!-- Start Input Email -->
+        <div class="form-group">
+          <label for="inputEmail">Email</label>
+          <input type="email" class="form-control" id="inputEmail" name="email" placeholder="" pattern="[a-z0-9._%+-]+@@[a-z0-9.-]+\.[a-z]{2,}$" required />      
+        </div>
+        <!-- End Input Email -->
 
+        <!-- Start Input Telephone -->
+        <div class="form-group">
+          <label for="inputPhone">Phone</label>
+          <input type="tel" class="form-control" id="inputPhone" name="phone" placeholder="05xxxxxxxxx" pattern="\d{3}\d{3}\d{4}" required />
+        </div>
+        <!-- End Input Telephone -->
 
+        <!-- Start Input Date , Start Time and End Time -->
+        <div class="form-row">
+          <!-- Start Input Date -->
+          <div class="form-group col-md-4">
+            <label for="inputDate">Date</label>
+            <input type="date" class="form-control" id="inputDate" name="date" required />
+            <small class="form-text text-muted">Please choose date and time for meeting.</small>
+          </div>
+          <!-- End Input Date -->
 
+          <!-- Start Input Start Time -->
+          <div class="form-group col-md-4">
+            <label>Start Time</label>
+            <div class="d-flex flex-row justify-content-between align-items-center">
+              <select class="form-control mr-1" id="inputStartTimeHour" name="startHour" required>
+                <option value="" disabled selected>Hour</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+              </select>
+              <div class="pl-1 pr-2">:</div>
+              <select class="form-control" id="inputStartTimeMinute" name="startMinute" required>
+                <option value="" disabled selected>Min</option>
+                <option value="00">00</option>
+                <option value="00">30</option>
+              </select>
+            </div>
+          </div>
+          <!-- End Input Start Time -->
 
+          <!-- Start Input End Time -->
+          <div class="form-group col-md-4">
+            <label>End Time</label>
+            <div class="d-flex flex-row justify-content-between align-items-center">
+              <select class="form-control mr-1" id="inputEndTimeHour" name="endHour" required>
+                <option value="" disabled selected>Hour</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+              </select>
+              <div class="pl-1 pr-2">:</div>
+              <select class="form-control" id="inputEndTimeMinute" name="endMinute" required>
+                <option value="" disabled selected>Min</option>
+                <option value="00">00</option>
+                <option value="00">30</option>
+              </select>
+            </div>
+          </div>
+          <!-- End Input End Time -->
+        </div>
+        <!-- End Input Date , Start Time and End Time -->
 
+        <!-- Start Check Room Type -->
+        <div class="form-group">
+          <legend class="col-form-label pt-0">Cinsiyeti</legend>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" id="inlineRadioType1" name="roomType" value="type1" required />
+            <label class="form-check-label" for="inlineRadioType1">Dişi</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input type="radio" class="form-check-input" id="inlineRadioType2" name="roomType" value="type2" required />
+            <label class="form-check-label" for="inlineRadioType2">Erkek</label>
+          </div>
+          </div>
+      
 
+        <!-- Start Input Remark -->
+        <div class="form-group">
+          <label for="textAreaRemark">Notes</label>
+          <textarea class="form-control" name="remark" id="textAreaRemark" rows="2" placeholder="Tell us you want more..."></textarea>
+        </div>
+        <!-- End Input Remark -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script>
-    var currentDateTime = new Date();
-    var year = currentDateTime.getFullYear();
-    var month = (currentDateTime.getMonth() + 1);
-    var date = (currentDateTime.getDate() + 1);
-
-    if (date < 10) {
-        date = '0' + date;
-    }
-    if (month < 10) {
-        month = '0' + month;
-    }
-
-    var dateTomorrow = year + "-" + month + "-" + date;
-    var checkinElem = document.querySelector("#checkin-date");
-    var checkoutElem = document.querySelector("#checkout-date");
-
-    checkinElem.setAttribute("min", dateTomorrow);
-
-    checkinElem.onchange = function () {
-        checkoutElem.setAttribute("min", this.value);
-    }
-</script>           
+        <!-- Start Submit Button -->
+        <button class="btn btn-primary btn-block col-lg-2" type="submit">Submit</button>
+        <!-- End Submit Button -->
+      </form>
+      <!-- End Form -->
+    </div>
+    <!-- End Card Body -->
+  </div>
+ 
